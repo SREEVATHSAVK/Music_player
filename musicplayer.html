@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player - SetUrMoodon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/72a7bf6423.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <img src="media/zach_img.jpg" alt="" class="song-img">
+            <h1>Christmas Lights</h1>
+            <p>Zach Seabaugh</p>
+
+            <audio id="song">
+                <source src="media/Zach_Seabaugh_-_Christmas_Lights.mp3" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playpause()"><i class="fa-solid fa-play" id="controlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
